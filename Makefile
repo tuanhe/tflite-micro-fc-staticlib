@@ -24,3 +24,8 @@ fully_connected_test : $(OBJS)
 	-o $@
 
 all: fully_connected_test
+
+.PHONY : clean
+clean :
+	-rm $(OBJS)
+	rm fully_connected_test
